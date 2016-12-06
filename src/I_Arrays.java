@@ -35,8 +35,13 @@ public class I_Arrays {
 
         // By default array is initialized to null
         String[] texts;
-        texts = new String[2]; // since we dont know how long a string could be, texts willjust allocate memory for 2 string references and nor strings
+        texts = new String[2];
         System.out.println("Default value of array - " + texts[0]);
+
+        String[] data;
+        data = new String[2]; // since we dont know how long a string could be, texts will just allocate memory for 2 string references and nor strings
+
+        data[0] = "my data"; // here we allocate memory to 0 reference of data array
 
     }
 }
