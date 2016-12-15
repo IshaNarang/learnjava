@@ -13,10 +13,12 @@
         // Class Can contain
         // 1. Data / Instance variables
         // 2. Subroutines
-
+        void speak() {
+            System.out.println("Hello");
+            System.out.println("My name is " + name + ".I am " + age + "years old.");
         }
 
-
+        }
 
 // if the class is public - The name of file must match with the name of the class .
 
@@ -29,12 +31,14 @@ public class K_ClassesAndObjects {
         {
             person1.name = "John";
             person1.age = 20;
+            person1.speak();
         }
 
         Person person2 = new Person();
         {
             person2.name = "Bob";
             person2.age = 25;
+            person2.speak();
         }
 
         System.out.println(person1.name);
@@ -42,26 +46,26 @@ public class K_ClassesAndObjects {
 
         System.out.println(35 % 3);
 
-        K_ClassesAndObjects myClass = new K_ClassesAndObjects();
-        int[] nums= {1,2,3,4};
-        myClass.firstLast6(nums);
+//        K_ClassesAndObjects myClass = new K_ClassesAndObjects();
+//        int[] nums= {1,2,3,4};
+////        myClass.firstLast6(nums);
     }
 
-    public boolean firstLast6(int nums[]) {
-        for (int i = 0; i < nums.length; i++) {
-            if (i == 0) {
-                if ((nums[i]) == 6) {
-                    return true;
-                }
-            }
-
-            if (i == nums.length) {
-                if ((nums[i]) == 6) {
-                    return true;
-                }
-            }
-            return false;
-        }
-        return false;
-    }
+//    public boolean firstLast6(int nums[]) {
+//        for (int i = 0; i < nums.length; i++) {
+//            if (i == 0) {
+//                if ((nums[i]) == 6) {
+//                    return true;
+//                }
+//            }
+//
+//            if (i == nums.length) {
+//                if ((nums[i]) == 6) {
+//                    return true;
+//                }
+//            }
+//            return false;
+//        }
+//        return false;
+//    }
 }
