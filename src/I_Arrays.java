@@ -14,6 +14,7 @@ public class I_Arrays {
         values[2] = 3;
         values[3] = 4;
 
+        kndfkj
         for(int i=0;i<values.length;i++){
             System.out.println(values[i]);
         }
